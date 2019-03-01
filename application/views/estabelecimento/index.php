@@ -32,7 +32,6 @@
         </tr>
     </table>
 
-
     <div class="modal fade" id="modal_confirmation">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -79,3 +78,4 @@
     </script>
 
     </main>
+
