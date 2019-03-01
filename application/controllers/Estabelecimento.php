@@ -9,7 +9,7 @@ class Estabelecimento extends CI_Controller{
 
     function index(){
         $data['estabelecimentos'] = $this->estabelecimento_model->get();
-        $this->master('/index', $data);
+        $this->master('estabelecimento/index', $data);
     }
 
     function create($title = 'Novo Registro'){
