@@ -1,3 +1,4 @@
+
 <main role="main" class="container">
 <div >
     <h1 class="text-center"><?php echo $title ?></h1>
@@ -15,7 +16,7 @@
             </div>
             <div class="form-group">
                 <label for="cep">CEP</label>
-                <input type="text" name="cep" id="cep" class="form-control" value="<?= set_value('cep') ? : (isset($cep) ? $cep : ''); ?>" />
+                <input type="text" name="cep" id="cep" class="form-control cep" value="<?= set_value('cep') ? : (isset($cep) ? $cep : ''); ?>" />
             </div>
             <div class="form-group">
                 <label for="rua">Rua</label>
