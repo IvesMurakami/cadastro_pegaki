@@ -33,7 +33,7 @@ class Estabelecimento extends CI_Controller{
         $this->estabelecimento_model->save($dados, $id);
 
         $data['estabelecimentos'] = $this->estabelecimento_model->get(null);
-        $this->master('estabelecimento/index', $data);
+        $this->master('/index', $data);
     }
 
     public function edit($id = null){
@@ -51,7 +51,7 @@ class Estabelecimento extends CI_Controller{
                 $data['cidade'] = $estabelecimento->row()->cidade;
                 $data['uf'] = $estabelecimento->row()->uf;
 
-                $this->master('estabelecimento/create', $data);
+                $this->master('/create', $data);
             }
         }
     }
