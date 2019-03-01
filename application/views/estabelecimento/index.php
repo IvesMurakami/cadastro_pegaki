@@ -24,7 +24,7 @@
 
                 <?php
                 $baseurl = base_url();
-                echo "<a href='$baseurl + estabelecimento/edit/$estabelecimento->estabelecimento_id' class='fas fa-pencil-alt' style='color:blue' title='Editar'></a>";
+                echo "<a href='./estabelecimento/edit/$estabelecimento->estabelecimento_id' class='fas fa-pencil-alt' style='color:blue' title='Editar'></a>";
                 ?>
                 |
                 <a href="#" class="confirma_exclusao fas fa-times" style="color: #ff0000" title="Excluir" data-estabelecimento_id="<?= $estabelecimento->estabelecimento_id ?>" data-nomefantasia="<?= $estabelecimento->nomefantasia ?>"></a>
