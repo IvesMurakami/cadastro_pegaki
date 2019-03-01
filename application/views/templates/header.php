@@ -30,7 +30,8 @@
 
             <div class="nav-scroller py-1 mb-2">
                 <nav class="nav d-flex ">
-                    <a class="p-2 text-muted" href="<?php echo base_url()?>">Inicio</a>
+                    <a class="p-2 text-muted" href="<?php echo base_url()?>">Login</a>
+                    <a class="p-2 text-muted" href="<?php echo base_url('estabelecimento/index')?>">Inicio</a>
                     <a class="p-2 text-muted" href="<?php echo base_url('estabelecimento/create');?>">Cadastrar estabelecimento</a>
 
                 </nav>
