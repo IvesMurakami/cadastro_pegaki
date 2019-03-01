@@ -33,7 +33,7 @@ class Estabelecimento extends CI_Controller{
         $this->estabelecimento_model->save($dados, $id);
 
         $data['estabelecimentos'] = $this->estabelecimento_model->get(null);
-        $this->master('/index', $data);
+        $this->master('estabelecimento/index', $data);
     }
 
     public function edit($id = null){
@@ -51,14 +51,15 @@ class Estabelecimento extends CI_Controller{
                 $data['cidade'] = $estabelecimento->row()->cidade;
                 $data['uf'] = $estabelecimento->row()->uf;
 
-                $this->master('/create', $data);
+                $this->master('estabelecimento/create', $data);
             }
         }
     }
 
     public function delete($id = null) {
         if ($this->estabelecimento_model->delete($id)) {
-            index_page();
+            $data['estabelecimentos'] = $this->estabelecimento_model->get(null);
+            $this->master('estabelecimento/index', $data);
 //            $data['estabelecimentos'] = $this->estabelecimento_model->get();
 //            $this->master('estabelecimento/index', $data);
         }
