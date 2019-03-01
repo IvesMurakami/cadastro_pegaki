@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7cda6afeac2aa16a5e5063d8bc1544f",
+    "content-hash": "ecc70c7e4fdee12448fb3f846cb4a336",
     "packages": [
         {
             "name": "rbdwllr/reallysimplejwt",
@@ -1485,7 +1485,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.7"
+        "php": ">=5.3.7",
+        "ext-mysqli": "*"
     },
     "platform-dev": []
 }

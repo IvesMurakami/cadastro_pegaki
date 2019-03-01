@@ -12,7 +12,8 @@
 	},
 	"require": {
 		"php": ">=5.3.7",
-		"rbdwllr/reallysimplejwt": "^2.0"
+		"rbdwllr/reallysimplejwt": "^2.0",
+        "ext-mysqli": "*"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
