@@ -58,8 +58,7 @@ class Estabelecimento extends CI_Controller{
 
     public function delete($id = null) {
         if ($this->estabelecimento_model->delete($id)) {
-            $data['estabelecimentos'] = $this->estabelecimento_model->get(null);
-            $this->master('estabelecimento/index', $data);
+            redirect('index','refresh');
 //            $data['estabelecimentos'] = $this->estabelecimento_model->get();
 //            $this->master('estabelecimento/index', $data);
         }
