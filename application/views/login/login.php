@@ -20,7 +20,6 @@
                     <input type="submit" class="fadeIn fourth" value="LogIn">
                 <?= form_close(); ?>
             </div>
-			<div>Aewaweaweseas</div>
         </div>
     </body>
 </html>
